@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" type="image/x-icon" href="../images/Logo.png">
+    <link rel="StyleSheet" type="text/css" href="../css/Container.css">
     <link rel="StyleSheet" type="text/css" href="../css/menu.css">
     <link rel="StyleSheet" type="text/css" href="../css/main.css">
+    <link rel="StyleSheet" type="text/css" href="../css/widget.css">
     <link rel="StyleSheet" type="text/css" href="../css/footer.css">
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Puppies+Play&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">  
@@ -21,71 +20,57 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <section>
-                <nav>
-                    <div class="div-Menu-izquierda">
-                        <ul>
-                            <li>
-                                <a href="#">Candidato |</a>
-                            </li>
-                            <li>
-                                <a href="#">Reclutador |</a>
-                            </li>
-                            <li>
-                                <a href="#">Empresa |</a>
-                            </li>
-                            <li>
-                                <a href="#">Salario |</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog |</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="div-Menu-Derecha ">
-                        <ul>
-                            <li>
-                                <a href="#">Publica  |</a>
-                            </li>
-                            <li>
-                                <a href="#">Ingresar |</a>
-                            </li>
-                            <li>
-                                <a id="menu-li-a" href="#">Crear CV</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <hr>
-            </section>
-        </div>
-        <section  >  
-            <div id="body-header-section-div1" >
-                <a href="../index.html">
-                    <img width="80px" src="../images/Logox72px.png" alt="CoderJobs::Logo">
-                </a>
-                Coder Jobs 
-            </div>
-            <div id="body-header-section-div2" >
+    <div class="contenedor">
+        <header class="header">
+            <div>
+                <Section>
+          
+                    <nav id="menu-Hamburger">
 
-            </div>
-            <div id="body-header-section-div3" >
-                <a >
-                    <img src="../images/Banner_A.jpg" alt="Banner de Promocion A">
-                </a>
-            </div>       
-            <div id="body-header-section-div4" >
-                <a >
-                    <img src="../images/Banner_B.jpg" alt="Banner de Promocion B">
-                </a>
+                        <label for="hamburger">&#9776;</label>
+                        <input id="hamburger" type="checkbox" />
                 
-            </div>                   
-        </section>
-
-    </header>
-    <main>
+                        <div id="hamitems">                        
+                            <a id ="hamitem_1" >Candidato</a>
+                            <a id ="hamitem_2" >Reclutador</a>
+                            <a id ="hamitem_3" >Empresa</a>
+                            <a id ="hamitem_4" >Salario</a>
+                            <a id ="hamitem_5" >Blog</a>
+                            <a id ="hamitem_6" ></a>
+                            <a id ="hamitem_7" ></a>
+                            <a id ="hamitem_8" >Publica</a>
+                            <a id ="hamitem_9" >Ingresar</a>
+                            <a id ="hamitem_10">Crear CV</a>                        
+                        </div>
+                    </nav>
+                </Section>
+            </div>
+            <hr>
+        </header>
+        <div class="banner">
+            <div class="contenedor-2">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img width="80px" src="../images/Logox72px.png" alt="CoderJobs::Logo">
+                    </a>
+                    <br>
+                    Coder Jobs
+                </div>        
+                <div class="banner-1">
+                </div>        
+                <div class="banner-2">
+                    <a >
+                        <img src="../images/Banner_A.jpg" alt="Banner de Promocion A">
+                    </a>
+                </div>        
+                <div class="banner-3">
+                    <a >
+                        <img src="../images/Banner_A.jpg" alt="Banner de Promocion B">
+                    </a>
+                </div>  
+            </div>      
+        </div>
+    <main  class="contenido">
         <hr>
         <section>
             <h1>Coder Jobs en otros paises</h1>
@@ -103,103 +88,104 @@
 
         </section>
     </main>
-    <footer>
-        <hr>
-        <section>
-            <div class="div-Footer-Izquierda_I ">
-                <ul>
-                    <li>
-                        <a href="# ">Institucional</a>
-                    </li>
-                    <li>
-                        <a href="./QuienesSomos.html">¿Quienes somos?</a>
-                    </li>
-                    <li>
-                        <a href="./contactoParaPersonas.html">Contacto para personas</a>
-                    </li>
-                    <li>
-                        <a href="./OtrosPaises.html">Otros Paises</a>
-                    </li>
-                    <li>
-                        <a href="./TerminosYcondiciones.html">Aviso legal y privacidad</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="div-Footer-Izquierda_II ">
-                <ul>
-                    <li>
-                        <a href="# " target="_blank ">Candidatos</a>
-                    </li>
-                    <li>
-                        <a href="# ">Preguntas Frecuentes de Candidato</a>
-                    </li>
-                    <li>
-                        <a href="# ">Busqueda por Pais</a>
-                    </li>
-                    <li>
-                        <a href="# ">Busqueda por Departamento</a>
-                    </li>
-                    <li>
-                        <a href="# ">Busqueda por Ciudad</a>
-                    </li>
-                    <li>
-                        <a href="# ">Busqueda por cargo Profesional</a>
-                    </li>
-                    <li>
-                        <a href="# ">Busqueda por Salario</a>
-                    </li>
-                    <li>
-                        <a href="# ">Busqueda por Industria</a>
-                    </li>
-                    <li>
-                        <a href="# ">Prueba de Aptitudes</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="div-Footer-Derecha_I ">
-                <ul>
-                    <li>
-                        <a href="# " target="_blank ">Reclutadores</a>
-                    </li>
-                    <li>
-                        <a href="# ">Preguntas Frecuentes de Empresa</a>
-                    </li>
-                    <li>
-                        <a href="# ">Contacto para Empresas</a>
-                    </li>
-                    <li>
-                        <a href="# ">Busqueda de Candidato</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="div-Footer-Derecha_II ">
-                <br>
-                <table>
-                    <tr>
-                        <th><img width="32px " src="../images/Twitter.png " alt="GooglePlay::Logo "></th>
-                        <th><img width="32px " src="../images/Instagram.png " alt="Instagram::Logo "></th>
-                        <th><img width="32px " src="../images/Facebook.png " alt="Facebook::Logo "></th>
-                        <th><img width="32px " src="../images/Linkedin.png " alt="Linkedin::Logo "></th>
-                        <th><img width="32px " src="../images/Blog.png " alt="Blog::Logo "></th>
-                    </tr>
-                    <tr>
-                        <td colspan="2 ">
-                            <img width="80px " src="../images/GooglePlay.png " alt="GooglePlay::Logo "> </td>
-                        <td></td>
-                        <td colspan="2 ">
-                            <img width="80px " src="../images/AppStore.png " alt="AppStore::Logo "> </td>
-                        </td>
-                    </tr>
-
-                </table>
-            </div>
-        </section>
+    <aside class="sidebar">
+        <a >
+            <img src="../images/Banner_C.jpg" alt="Banner de Promocion C">
+        </a>
+    </aside>
+    <div class="widget-1">
+        <ul>
+            <li>
+                <a href="#">Institucional</a>
+            </li>
+            <li>
+                <a href="QuienesSomos.html">¿Quienes somos?</a>
+            </li>
+            <li>
+                <a href="contactoParaPersonas.html">Contacto para personas</a>
+            </li>
+            <li>
+                <a href="OtrosPaises.html">Otros Paises</a>
+            </li>
+            <li>
+                <a href="TerminosYcondiciones.html">Aviso legal y privacidad</a>
+            </li>
+        </ul>
+    </div>
+    <div class="widget-2">
+        <ul>
+            <li>
+                <a href="#" target="_blank">Candidatos</a>
+            </li>
+            <li>
+                <a href="#">Preguntas Frecuentes de Candidato</a>
+            </li>
+            <li>
+                <a href="#">Busqueda por Pais</a>
+            </li>
+            <li>
+                <a href="#">Busqueda por Departamento</a>
+            </li>
+            <li>
+                <a href="#">Busqueda por Ciudad</a>
+            </li>
+            <li>
+                <a href="#">Busqueda por cargo Profesional</a>
+            </li>
+            <li>
+                <a href="#">Busqueda por Salario</a>
+            </li>
+            <li>
+                <a href="#">Busqueda por Industria</a>
+            </li>
+            <li>
+                <a href="#">Prueba de Aptitudes</a>
+            </li>
+        </ul>
+    </div>
+    <div class="widget-3">
+        <ul>
+            <li>
+                <a href="#" target="_blank">Reclutadores</a>
+            </li>
+            <li>
+                <a href="#">Preguntas Frecuentes de Empresa</a>
+            </li>
+            <li>
+                <a href="#">Contacto para Empresas</a>
+            </li>
+            <li>
+                <a href="#">Busqueda de Candidato</a>
+            </li>
+        </ul>
+    </div>
+    <div class="widget-4">
         <br>
-        <hr>
+        <table>
+            <tr>
+                <th><img width="32px" src="../images/Twitter.png" alt="GooglePlay::Logo"></th>
+                <th><img width="32px" src="../images/Instagram.png" alt="Instagram::Logo"></th>
+                <th><img width="32px" src="../images/Facebook.png" alt="Facebook::Logo"></th>
+                <th><img width="32px" src="../images/Linkedin.png" alt="Linkedin::Logo"></th>
+                <th><img width="32px" src="../images/Blog.png" alt="Blog::Logo"></th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img width="80px" src="../images/GooglePlay.png" alt="GooglePlay::Logo"> </td>
+                <td></td>
+                <td colspan="2">
+                    <img width="80px" src="../images/AppStore.png" alt="AppStore::Logo"> </td>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <footer class="footer" >
         <section id="Footer-div">
             <p>Copyright 2021 - LJRG SAC TODOS LOS DERECHOS RESERVADOS</p>
         </section>
     </footer>
+</div>
 
 </body>
 

@@ -1,9 +1,3 @@
-footer {
-    background-color: white;
-    
-
-}
-
 Footer div {
     background-color: white;
     width: 100%;
@@ -16,9 +10,6 @@ Footer ul {
 
 Footer li {
     background-color: white;
-    /* align-items: left; */
-    /* text-align: left; */
-    /* width: 200px; */
 }
 
 Footer li a{
@@ -33,41 +24,5 @@ Footer li a{
     color: white;
     background-color: black;
     padding-right: 20px;
-    font-size: 0.6rem;
-    /* font-family: 'Puppies Play', cursive; */
-    
-}
-
-
-
-
-.div-Footer-Izquierda_I {
-    vertical-align: text-top;
-    display: inline-block;
-    width: 250px;
-    padding: 5px;
-    list-style-image: url(../images/Icon_UL.png);
-}
-
-.div-Footer-Izquierda_II {
-    vertical-align: text-top;
-    display: inline-block;
-    width: 300px;
-    padding: 5px;
-    list-style-image: url(../images/Icon_UL.png);
-}
-
-.div-Footer-Derecha_I {
-    vertical-align: text-top;
-    display: inline-block;
-    width: 250px;
-    padding: 5px;
-    list-style-image: url(../images/Icon_UL.png);
-}
-
-.div-Footer-Derecha_II {
-    display: inline-block;
-    width: 250px;
-    padding: 5px;
-    /* list-style-image: url(../images/Icon_UL.png); */
+    font-size: 0.6rem;    
 }
