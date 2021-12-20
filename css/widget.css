@@ -40,3 +40,7 @@ ul {
     align-items: top;
     justify-content: center;
 }
+
+.contenedor .widget-4 table {
+    height: 90px;
+}
