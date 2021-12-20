@@ -73,12 +73,13 @@ fieldset div input[type=submit]{
 
 #body-main-fieldset-div1 {
     height: 40px;
-    width: 300px;
-    text-align:center;
+    width: 400px;
+    text-align:right;
     font-size:12px;
     display: inline-block;
     vertical-align: middle;
     align-items: right;
+
     
 }
 #body-main-fieldset-div2 {
@@ -87,6 +88,24 @@ fieldset div input[type=submit]{
     display: inline-block;
     vertical-align: middle;
 }
+
+#body-main-fieldset-div1 input {     
+        transition: all 2s;         
+}
+#body-main-fieldset-div1 input:focus {
+    width: 400px;
+    font-size: 25px;
+}
+
+#body-main-fieldset-div2 input {     
+    transition: all 2s;         
+}
+#body-main-fieldset-div2 input:focus {
+    width: 300px;
+    font-size: 25px;
+}
+
+
 #body-main-fieldset-div3 {
     height: 40px;
     width: 100px;
@@ -112,3 +131,23 @@ ol {
 
 }
 
+
+
+.animacion_Aparecer{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        }
+    50% {
+        opacity: 1;
+        }
+    100% {
+      opacity: 0;
+        }
+}
+      

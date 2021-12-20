@@ -18,6 +18,8 @@
     transition: all 2.5s ease;
     background: #af0d0d;
     cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
 }
   #hamitem_6,#hamitem_7 { 
     background: black !important;
