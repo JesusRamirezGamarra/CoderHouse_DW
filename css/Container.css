@@ -19,6 +19,7 @@ body {
 	grid-gap: 20px;
     grid-template-areas:    "header header header header header"
                             "banner banner banner banner banner"
+                            "carrosel_Bootsrap carrosel_Bootsrap carrosel_Bootsrap carrosel_Bootsrap carrosel_Bootsrap"
                             "contenido contenido contenido contenido sidebar"
                             "widget-1 widget-2 widget-3 widget-4 sidebar"
                             "footer footer footer footer footer"
@@ -45,6 +46,11 @@ body {
 .contenedor .banner{
     background:#fff;
     grid-area: banner;
+}
+
+.contenedor .carrosel_Bootsrap{
+    background:#fff;
+    grid-area: carrosel_Bootsrap;
 }
 
 
@@ -182,23 +188,20 @@ body {
 
 @keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 200%
+        margin-left: 100%;
+        width: 200%
     }
-  
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
-  }
-
-  
-
+}
 
 @media screen and (max-width:1024px){
     .contenedor{
         grid-template-areas:    "header header header header header"
                                 "banner banner banner banner banner"
+                                "carrosel_Bootsrap carrosel_Bootsrap carrosel_Bootsrap carrosel_Bootsrap carrosel_Bootsrap"
                                 "contenido contenido contenido contenido sidebar"
                                 "widget-1 widget-2 widget-3 widget-4 sidebar"
                                 "footer footer footer footer footer"
@@ -219,6 +222,7 @@ body {
     .contenedor{
         grid-template-areas:    "header header"
                                 "banner banner"
+                                "carrosel_Bootsrap carrosel_Bootsrap"
                                 "contenido contenido"
                                 "sidebar sidebar"
                                 "widget-1 widget-2" 
@@ -239,6 +243,11 @@ body {
     }
     .banner-2{ display: none;}
 
+    
+    .featurette-heading {
+    margin-top: 7rem;
+    
+
 }
 
 @media screen and (max-width:480px){
@@ -248,6 +257,7 @@ body {
     }    
     .contenedor{
         grid-template-areas:    "header"
+                                "carrosel_Bootsrap"
                                 "contenido"
                                 "sidebar"
                                 "widget-1"
@@ -257,8 +267,7 @@ body {
                                 "footer"
     }
     .contenedor .sidebar { display: none;}
-    .banner { display: none;}
-
+    .banner { display: none;}  
 
     .contenedor-3 .video-1{display: none;} 
     .contenedor-3 .video-2{display: none;} 
@@ -271,5 +280,15 @@ body {
                                 "parrafo-D"
                                 "parrafo-E"
 
+    }
+
+    .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    }
+
+    .featurette-heading {
+    font-size: 50px;
     }
 }
