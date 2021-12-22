@@ -110,32 +110,26 @@ body {
 }
 
 
+
 .contenedor-3 {
-    width:100%;
-    margin: 20px auto ;
-	display:flex;
-    flex-direction: row;
-    text-align: center;
-	grid-gap: 20px;
-    align-items: flex-start;
-    justify-content: center;    
+    width: 100%;
+	display: grid;
+	grid-gap: 20px; 
+    justify-content: center;  
+    grid-template-areas:    "video-1 video-2 video-3"
 
 }
 
-.contenedor-3 .video-1{
-    align-items: right ;
-    max-width:230px;
+.contenedor-3 .video-1 {
+    grid-area: video-1;
     
-} 
-.contenedor-3 .video-2{
-    align-items: center;
-    justify-content: center; 
-    text-align: center;
 }
-.contenedor-3 .video-3{
-    align-items: left;
-    max-width:230px;
-} 
+.contenedor-4 .video-2 {
+    grid-area: video-2;
+}
+.contenedor-4 .video-3 {
+    grid-area: video-3;
+}
 
 
 .contenedor-4 {
@@ -231,6 +225,10 @@ body {
                                 "widget-3 widget-4"
                                 "footer footer"
     }
+    
+    .contenedor-3 .video-1{display: none;} 
+    .contenedor-3 .video-3{display: none;} 
+
     .contenedor-4{
         grid-template-areas:    "parrafo-A parrafo-A"
                                 "parrafo-B parrafo-B"
@@ -261,6 +259,10 @@ body {
     .contenedor .sidebar { display: none;}
     .banner { display: none;}
 
+
+    .contenedor-3 .video-1{display: none;} 
+    .contenedor-3 .video-2{display: none;} 
+    .contenedor-3 .video-3{display: none;} 
 
     .contenedor-4{
         grid-template-areas:    "parrafo-A"
