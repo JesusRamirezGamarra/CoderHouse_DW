@@ -1,0 +1,17 @@
+.btn-outline-CodeJobs {
+    color:  #a02620 !important;
+    border-color:  #a02620 !important;
+}
+
+.btn-online-CodeJobs {
+    color: #fff !important;
+    background-color: #a02620 !important;
+    border-color: #a02620 !important;
+    
+}
+
+.bg-online-CodeJobs {
+    /* --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb),var(--bs-bg-opacity))!important; */
+    background-color: #a02620 !important;
+}

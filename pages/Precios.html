@@ -9,7 +9,8 @@
     <link rel="StyleSheet" type="text/css" href="../css/Container.css">
     <link rel="StyleSheet" type="text/css" href="../css/menu.css">   
     <link rel="StyleSheet" type="text/css" href="../css/main.css">
-    <!-- <link rel="StyleSheet" type="text/css" href="../css/carousel.css">   -->
+    <link rel="StyleSheet" type="text/css" href="../css/precios.css">  
+    <link rel="StyleSheet" type="text/css" href="../css/botones.css">
     <link rel="StyleSheet" type="text/css" href="../css/widget.css"> 
     <link rel="StyleSheet" type="text/css" href="../css/sign-in.css">
     <link rel="StyleSheet" type="text/css" href="../css/footer.css">
@@ -17,6 +18,13 @@
     <title>Precios :: CoderJobs</title>
 </head>
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check" viewBox="0 0 16 16">
+          <title>Check</title>
+          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+        </symbol>
+      </svg>
+
     <div class="contenedor">
         <header class="header">
             <div>
@@ -26,7 +34,7 @@
                         <input id="hamburger" type="checkbox" />
                         <div id="hamitems">                        
                             <a id ="hamitem_1" href="../pages/QuienesSomos.html">Candidato</a>
-                            <a id ="hamitem_2" >Reclutador</a>
+                            <a id ="hamitem_2" href="../pages/Reclutador.html">Reclutador</a>
                             <a id ="hamitem_3" >Empresa</a>
                             <a id ="hamitem_4" href="../pages/OtrosPaises.html" >Otros Paises</a>
                             <a id ="hamitem_5" href="../pages/TerminosYcondiciones.html" >Aviso Legal</a>
@@ -42,7 +50,134 @@
             <hr>
         </header>
         <main class="contenido">
- 
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Gratis</h4>
+                </div>
+                <div class="card-body">
+                <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/Mensual</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>1 Usuario</li>
+                    <li>Acceso a las conferencias publicas</li>
+                    <li>Soporte via email</li>
+                    <li>Acceso al Help Desk Forum</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-CodeJobs">Acceso Gratuito</button>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Profesional</h4>
+                </div>
+                <div class="card-body">
+                <h1 class="card-title pricing-card-title">$19<small class="text-muted fw-light">/Mensual</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>5 Usuarios</li>
+                    <li>Acceso a las conferencias publicas y privadas</li>
+                    <li>10 GB de storage Premium</li>
+                    <li>Soporte preferencial via email</li>
+                    <li>Acceso al Help Desk Privado</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-online-CodeJobs">Inicia ya</button>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm btn-outline-CodeJobs">
+                <div class="card-header py-3 text-white bg-online-CodeJobs btn-outline-CodeJobs">
+                <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                <h1 class="card-title pricing-card-title">$49<small class="text-muted fw-light">/Mensual</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 Usuarios</li>
+                    <li>150 GB de storage</li>
+                    <li>Soporte preferencial via telefono y email</li>
+                    <li>Acceso al Help Desk Privado</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-online-CodeJobs">Contact us</button>
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <h2 class="display-6 text-center mb-4">Compara nuestros planes</h2>
+
+            <div class="table-responsive">
+            <table class="table text-center">
+            <thead>
+                <tr>
+                <th style="width: 34%;"></th>
+                <th style="width: 22%;">Gratis</th>
+                <th style="width: 22%;">Profesional</th>
+                <th style="width: 22%;">Enterprise</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row" class="text-start">Publico</th>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                <th scope="row" class="text-start">Privado</th>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th scope="row" class="text-start">Acceso</th>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Comparte</th>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Envios CV ilimitados</th>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Extra Seguridad</th>
+                    <td></td>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Promocion Linkedin</th>
+                    <td></td>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Acceso a Bolsa de Trabajo Publicas</th>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Acceso a Bolsa de Trabajo Privadas</th>
+                    <td></td>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                </tr>                
+            </tbody>
+            </table>
+            </div>
         </main>
         <aside class="sidebar">
             <a >
