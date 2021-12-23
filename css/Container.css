@@ -1,0 +1,273 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: black;
+    background-image: url("../images/FondoA.png");
+}
+
+
+.contenedor {
+	width: 90%;
+	max-width: 1200;
+	margin: 20px auto ;
+	display: grid;
+	grid-gap: 20px;
+    grid-template-areas:    "header header header header header"
+                            "banner banner banner banner banner"
+                            "contenido contenido contenido contenido sidebar"
+                            "widget-1 widget-2 widget-3 widget-4 sidebar"
+                            "footer footer footer footer footer"
+
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+
+.contenedor .header {
+    background: black;
+    color: #fff;
+    grid-area: header;
+}
+
+.contenedor .banner{
+    background:#fff;
+    grid-area: banner;
+}
+
+
+.contenedor .contenido{
+    grid-area: contenido;
+}
+.contenedor .sidebar {
+    background:#fff;
+    text-align: center;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    grid-area: sidebar;
+    min-height: 100px;
+
+}
+
+.contenedor .widget-1{
+    grid-area: widget-1;    
+}
+.contenedor .widget-2{
+    grid-area: widget-2;    
+}
+.contenedor .widget-3{
+    grid-area: widget-3;    
+}
+.contenedor .widget-4{
+    grid-area: widget-4;    
+}
+
+.contenedor .footer{
+    background-color: black;
+    grid-area: footer;
+}
+
+
+
+
+.contenedor-2 {
+	width: 100%;
+	max-width: 1200;
+	display: grid;
+	grid-gap: 10px; 
+    grid-template-areas:    "logo banner-1 banner-2 banner-3"
+
+}
+
+
+.contenedor-2 .logo {
+    grid-area: logo;
+
+}
+.contenedor-2 .banner-1{
+    grid-area: banner-1;    
+}
+.contenedor-2 .banner-2{
+    grid-area: banner-2;    
+    background: black;
+}
+.contenedor-2 .banner-3{
+    grid-area: banner-3;    
+    background: black;
+}
+
+
+.contenedor-3 {
+    width:100%;
+    margin: 20px auto ;
+	display:flex;
+    flex-direction: row;
+    text-align: center;
+	grid-gap: 20px;
+    align-items: flex-start;
+    justify-content: center;    
+
+}
+
+.contenedor-3 .video-1{
+    align-items: right ;
+    max-width:230px;
+    
+} 
+.contenedor-3 .video-2{
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+}
+.contenedor-3 .video-3{
+    align-items: left;
+    max-width:230px;
+} 
+
+
+.contenedor-4 {
+    width: 100%;
+	display: grid;
+	grid-gap: 20px; 
+    grid-template-areas:    "parrafo-A parrafo-A parrafo-A parrafo-D"
+                            "parrafo-B parrafo-B parrafo-E parrafo-D"
+                            "parrafo-C parrafo-C parrafo-C parrafo-C"
+}
+
+
+.contenedor-4 > div,
+.contenedor-4 .parrafo-A,
+.contenedor-4 .parrafo-B,
+.contenedor-4 .parrafo-C,
+.contenedor-4 .parrafo-D,
+.contenedor-4 .parrafo-E  {
+	border-radius: 4px;
+}
+
+.contenedor-4 .parrafo-A {
+    grid-area: parrafo-A;
+    
+}
+.contenedor-4 .parrafo-B {
+    grid-area: parrafo-B;
+}
+.contenedor-4 .parrafo-C {
+    grid-area: parrafo-C;
+}
+.contenedor-4 .parrafo-D {
+    grid-area: parrafo-D;
+}
+
+.contenedor-4 .parrafo-E {
+    grid-area: parrafo-E;
+}
+
+
+.contenedor-4   .parrafo-A,
+                .parrafo-B,
+                .parrafo-C,
+                .parrafo-D,
+                .parrafo-E,
+                p{
+    animation-duration: 1s;
+    animation-name: slidein;    
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  
+
+
+@media screen and (max-width:1024px){
+    .contenedor{
+        grid-template-areas:    "header header header header header"
+                                "banner banner banner banner banner"
+                                "contenido contenido contenido contenido sidebar"
+                                "widget-1 widget-2 widget-3 widget-4 sidebar"
+                                "footer footer footer footer footer"
+    }
+    .contenedor-4{
+        grid-template-areas:    "parrafo-A parrafo-A parrafo-A parrafo-D"
+                                "parrafo-B parrafo-B parrafo-B parrafo-D"
+                                "parrafo-E parrafo-E parrafo-E parrafo-D"
+                                "parrafo-C parrafo-C parrafo-C parrafo-C"
+
+    }
+    
+
+}
+
+
+@media screen and (max-width:768px){
+    .contenedor{
+        grid-template-areas:    "header header"
+                                "banner banner"
+                                "contenido contenido"
+                                "sidebar sidebar"
+                                "widget-1 widget-2" 
+                                "widget-3 widget-4"
+                                "footer footer"
+    }
+    .contenedor-4{
+        grid-template-areas:    "parrafo-A parrafo-A"
+                                "parrafo-B parrafo-B"
+                                "parrafo-E parrafo-E"
+                                "parrafo-C parrafo-C"
+                                "parrafo-D parrafo-D"
+
+    }
+    .banner-2{ display: none;}
+
+}
+
+@media screen and (max-width:480px){
+    body{
+        background-color: black;
+        background-image: none !important;
+    }    
+    .contenedor{
+        grid-template-areas:    "header"
+                                "contenido"
+                                "sidebar"
+                                "widget-1"
+                                "widget-2"
+                                "widget-3"
+                                "widget-4"
+                                "footer"
+    }
+    .contenedor .sidebar { display: none;}
+    .banner { display: none;}
+
+
+    .contenedor-4{
+        grid-template-areas:    "parrafo-A"
+                                "parrafo-B"
+                                "parrafo-C"
+                                "parrafo-D"
+                                "parrafo-E"
+
+    }
+}

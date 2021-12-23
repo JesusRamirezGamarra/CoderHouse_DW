@@ -1,0 +1,28 @@
+Footer div {
+    background-color: white;
+    width: 100%;
+}
+
+Footer ul {
+    list-style-type: none;
+    
+}
+
+Footer li {
+    background-color: white;
+}
+
+Footer li a{
+    text-decoration: none;
+    color:darkslategrey;
+
+}
+
+
+#Footer-div {
+    text-align: right;
+    color: white;
+    background-color: black;
+    padding-right: 20px;
+    font-size: 0.6rem;    
+}

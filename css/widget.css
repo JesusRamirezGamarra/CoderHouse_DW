@@ -1,0 +1,46 @@
+ul {
+    list-style-type: none;
+    padding:10px;
+}
+
+.div li {
+    background-color: white;
+}
+
+.div li a{
+    text-decoration: none;
+    color:darkslategrey;
+}
+
+.widget-1 {
+    vertical-align: text-top;
+    display: inline-block;
+    
+    list-style-image: url(../images/Icon_UL.png);
+    display: flex;
+    align-items: top;
+    justify-content: left;
+}
+
+.contenedor .widget-2 {
+    vertical-align: text-top;
+    display: inline-block;
+    list-style-image: url(../images/Icon_UL.png);
+}
+
+.contenedor .widget-3 {
+    vertical-align: text-top;
+    display: inline-block;
+    list-style-image: url(../images/Icon_UL.png);
+}
+
+.contenedor .widget-4 {
+    display: inline-block;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.contenedor .widget-4 table {
+    height: 90px;
+}

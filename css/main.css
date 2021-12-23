@@ -1,0 +1,153 @@
+
+
+main section {
+    background-color: white;
+    text-align: center;
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+}
+
+img{
+    border: 0px solid;
+}
+
+section h1{
+    text-align:left;
+    padding: 20px 20px 0px 20px;
+    margin:0px 0px 0px 0px;
+}
+
+section h2{
+    text-align:left;
+    padding: 0px 20px 0px 20px;
+    margin:0px 0px 0px 0px;
+    font-size: 0.8rem;
+}
+
+section h3{
+    text-align:left;
+    padding: 0px 20px 0px 20px;
+    margin:0px 0px 0px 0px;
+}
+
+section h4{
+    text-align:left;
+    padding: 0px 20px 0px 20px;
+    margin:0px 0px 0px 0px;
+}
+
+section article p {
+    text-align: left;
+    font-size: 1.0rem;
+    line-height: 1.2;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0px 20px 0px 20px;
+    color: black;
+}
+
+fieldset {
+    display: block;
+    min-inline-size: min-content;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35rem;
+    padding-inline-start: 0.7rem;
+    padding-inline-end: 0.75rem;
+    padding-block-end: 0.625rem;
+    border-top: dotted threedface 2px;
+    border-left: dotted threedface 2px;
+    border-right: dotted threedface 2px;
+    border-bottom: dotted threedface 2px;
+    border-image: initial;
+    border-radius: 5%;
+}
+
+fieldset input{
+    width: 300px;
+}
+
+fieldset div input[type=submit]{
+    cursor: pointer;
+    width: 100px;
+}
+
+#body-main-fieldset-div1 {
+    height: 40px;
+    width: 400px;
+    text-align:right;
+    font-size:12px;
+    display: inline-block;
+    vertical-align: middle;
+    align-items: right;
+
+    
+}
+#body-main-fieldset-div2 {
+    height: 40px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#body-main-fieldset-div1 input {     
+        transition: all 2s;         
+}
+#body-main-fieldset-div1 input:focus {
+    width: 400px;
+    font-size: 25px;
+}
+
+#body-main-fieldset-div2 input {     
+    transition: all 2s;         
+}
+#body-main-fieldset-div2 input:focus {
+    width: 300px;
+    font-size: 25px;
+}
+
+
+#body-main-fieldset-div3 {
+    height: 40px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    text-align: left;
+}
+
+#TerminosYcondiciones-body{
+    overflow: auto;
+    height: 600px;
+    width: 100%;
+
+}
+
+
+
+.animacion_Aparecer{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        }
+    50% {
+        opacity: 1;
+        }
+    100% {
+      opacity: 0;
+        }
+}
+      
