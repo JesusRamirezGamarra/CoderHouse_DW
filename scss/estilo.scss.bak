@@ -1,5 +1,5 @@
 @import "variables";
-@import "menu";
+@import "botones";
 @import "botones";
 @import "sign-in";
 @import "footer";

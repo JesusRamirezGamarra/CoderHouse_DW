@@ -1,46 +1,162 @@
+#menu-Hamburger {
+  width: 100%;
+  background: #000;
+  position: sticky;
+  top: 0;
+}
+
+#hamitems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#hamitems a {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  -webkit-transition: all 2.5s ease;
+  transition: all 2.5s ease;
+  background: #af0d0d;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#hamitem_6, #hamitem_7 {
+  background: black !important;
+  border-bottom: 0px !important;
+  cursor: default !important;
+}
+
+#hamitem_10 {
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+#hamitem_10 {
+  background: #af0d0d;
+  color: white;
+}
+
+#hamitem_10:hover {
+  -webkit-transition: all 2.5s ease !important;
+  transition: all 2.5s ease !important;
+  background: blue !important;
+}
+
+#hamitem_10:hover {
+  cursor: pointer !important;
+}
+
+#menu-Hamburger label, #hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #hamitems a {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  #hamitem_6, #hamitem_7 {
+    display: none !important;
+  }
+
+  #menu-Hamburger label {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  #hamitems {
+    display: none;
+  }
+
+  #menu-Hamburger input:checked ~ #hamitems {
+    display: block;
+  }
+}
 .btn-outline-CodeJobs {
   color: #a02620 !important;
-  border-color: #a02620 !important; }
+  border-color: #a02620 !important;
+}
 
 .btn-online-CodeJobs {
   color: white !important;
   background-color: #a02620 !important;
-  border-color: #a02620 !important; }
+  border-color: #a02620 !important;
+}
 
 .bg-online-CodeJobs {
-  background-color: #a02620 !important; }
+  background-color: #a02620 !important;
+}
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+}
 
 .text-center {
-  text-align: center !important; }
+  text-align: center !important;
+}
 
 .form-signin {
   width: 100%;
   max-width: 330px;
   padding: 15px;
-  margin: auto; }
-  .form-signin .checkbox {
-    font-weight: 400; }
-  .form-signin .form-floating:focus-within {
-    z-index: 2; }
-  .form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0; }
-  .form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0; }
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.form-signin input[type=email] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type=password] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
 Footer div {
   background-color: white;
-  width: 100%; }
+  width: 100%;
+}
 
 #Footer-div {
   text-align: right;
@@ -48,4 +164,5 @@ Footer div {
   background-color: Black;
   padding-right: 20px;
   font-size: 0.6rem;
-  height: 70px; }
+  height: 70px;
+}

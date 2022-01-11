@@ -1,0 +1,110 @@
+#menu-Hamburger {
+    width: 100%;
+    background: #000;
+    position: sticky;
+    top: 0;
+  }
+  
+  #hamitems { 
+    display: flex; 
+  
+    a {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 5px;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover { 
+        transition: all 2.5s ease;
+        background: #af0d0d;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+}
+  
+  #hamitem_6,#hamitem_7 { 
+    background: black !important;
+    border-bottom: 0px !important;
+    cursor: default !important;
+}
+  
+
+
+
+
+
+
+
+%boton{
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+@mixin boton($fondo,$letra) {
+  @extend %boton;
+  background: $fondo;
+  color: $letra;
+}
+
+#hamitem_10 {
+  @include boton(#af0d0d,white)
+}
+
+
+%boton_hover{
+    transition: all 2.5s ease !important;
+    background: blue  !important; 
+}
+
+@mixin boton_hover($pointer) {
+  @extend %boton_hover;
+  cursor: $pointer !important;
+}
+
+
+  #hamitem_10:hover{
+    @include boton_hover(pointer)
+  }
+
+
+
+
+#menu-Hamburger label, #hamburger { display: none; }
+
+
+@media screen and (max-width: 768px){
+
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+#hamitem_6,#hamitem_7 {display: none !important; } 
+  
+  #menu-Hamburger label {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px ;
+  }
+
+  
+  #hamitems { display: none; }
+  #menu-Hamburger input:checked ~ #hamitems { 
+    display: block; 
+  }
+}
+
+
+
