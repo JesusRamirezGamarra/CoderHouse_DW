@@ -130,6 +130,11 @@ body {
   text-align: center !important;
 }
 
+.text-center-commingSoon {
+  text-align: center !important;
+  background: black !important;
+}
+
 .form-signin {
   width: 100%;
   max-width: 330px;
