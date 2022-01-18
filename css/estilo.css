@@ -158,6 +158,69 @@ body {
   border-top-right-radius: 0;
 }
 
+.accordion-button-CoderJobs {
+  color: white !important;
+  background-color: #a02620 !important;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.div li {
+  background-color: white;
+}
+.div li a {
+  text-decoration: none;
+  color: darkslategrey;
+}
+
+.contenedor .widget-1 {
+  display: inline-block;
+  vertical-align: text-top;
+  list-style-image: url(../images/Icon_UL.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.contenedor .widget-2 {
+  display: inline-block;
+  vertical-align: text-top;
+  list-style-image: url(../images/Icon_UL.png);
+}
+
+.contenedor .widget-3 {
+  display: inline-block;
+  vertical-align: text-top;
+  list-style-image: url(../images/Icon_UL.png);
+}
+
+.contenedor .widget-4 {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.contenedor .widget-4 table {
+  height: 90px;
+}
+
 Footer div {
   background-color: white;
   width: 100%;

@@ -1,0 +1,82 @@
+ul {
+    list-style-type: none;
+    padding:10px;
+}
+
+// .div li {
+//     background-color: white;
+// }
+
+// .div li a{
+//     text-decoration: none;
+//     color:darkslategrey;
+// }
+
+.div li{
+    background-color: white;
+    a {
+        text-decoration: none;
+        color:darkslategrey;   
+    }
+}
+
+
+
+// .contenedor .widget-1 {
+//     vertical-align: text-top;
+//     display: inline-block;
+//     list-style-image: url(../images/Icon_UL.png);
+//     display: flex;
+//     align-items: top;
+//     justify-content: left;
+// }
+// .contenedor .widget-2 {
+//     vertical-align: text-top;
+//     display: inline-block;
+//     list-style-image: url(../images/Icon_UL.png);
+// }
+// .contenedor .widget-3 {
+//     vertical-align: text-top;
+//     display: inline-block;
+//     list-style-image: url(../images/Icon_UL.png);
+// }
+// .contenedor .widget-4 {
+//     display: inline-block;
+//     display: flex;
+//     align-items: top;
+//     justify-content: center;
+//     text-align: center;
+// }
+// .contenedor .widget-4 table {
+//     height: 90px;
+// }
+
+@for $i from 1 through 4 {
+    .contenedor .widget-#{$i} {
+        display: inline-block;
+
+        @if $i < 4 {
+            vertical-align: text-top;
+            list-style-image: url(../images/Icon_UL.png);
+            @if $i == 1{
+                display: flex;
+                align-items: top;
+                justify-content: left;
+            }
+        }@else{
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    @if $i== 4 {
+        .contenedor .widget-#{$i} table {
+            height: 90px;
+        }
+    }
+
+}
+
+
+

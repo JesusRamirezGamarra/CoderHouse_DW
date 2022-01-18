@@ -16,7 +16,7 @@ body {
 	max-width: 1200;
 	margin: 20px auto ;
 	display: grid;
-	grid-gap: 20px;
+	grid-gap: 5px;
     grid-template-areas:    "header header header header header"
                             "banner banner banner banner banner"
                             "carrosel_Bootsrap carrosel_Bootsrap carrosel_Bootsrap carrosel_Bootsrap carrosel_Bootsrap"
@@ -93,7 +93,7 @@ body {
 	width: 100%;
 	max-width: 1200;
 	display: grid;
-	grid-gap: 10px; 
+	grid-gap: 5px; 
     grid-template-areas:    "logo banner-1 banner-2 banner-3"
 
 }
@@ -120,7 +120,7 @@ body {
 .contenedor-3 {
     width: 100%;
 	display: grid;
-	grid-gap: 20px; 
+	grid-gap: 5px; 
     justify-content: center;  
     grid-template-areas:    "video-1 video-2 video-3"
 
@@ -141,9 +141,9 @@ body {
 .contenedor-4 {
     width: 100%;
 	display: grid;
-	grid-gap: 20px; 
+	grid-gap: 5px; 
     grid-template-areas:    "parrafo-A parrafo-A parrafo-A parrafo-D"
-                            "parrafo-B parrafo-B parrafo-E parrafo-D"
+                            "parrafo-B parrafo-E parrafo-E parrafo-D"
                             "parrafo-C parrafo-C parrafo-C parrafo-C"
 }
 
