@@ -63,27 +63,18 @@ body {
         min-height: 100px;
     
     }
+
+    .footer{
+        background-color: black;
+        grid-area: footer;
+    }
 }
 
-
-.contenedor .widget-1{
-    grid-area: widget-1;    
+@for $i from 1 through 4 {
+    .contenedor .widget-#{$i} {
+        grid-area: widget-#{$i};    
+    }
 }
-.contenedor .widget-2{
-    grid-area: widget-2;    
-}
-.contenedor .widget-3{
-    grid-area: widget-3;    
-}
-.contenedor .widget-4{
-    grid-area: widget-4;    
-}
-
-.contenedor .footer{
-    background-color: black;
-    grid-area: footer;
-}
-
 
 
 
@@ -92,26 +83,25 @@ body {
 	max-width: 1200;
 	display: grid;
 	grid-gap: 5px; 
-    grid-template-areas:    "logo banner-1 banner-2 banner-3"
+    grid-template-areas:    "logo banner-1 banner-2 banner-3";
+
+    .logo {
+        grid-area: logo;
+    
+    }
+
 
 }
 
+@for $i from 1 through 3 {
+    .contenedor-2 .banner-#{$i} {
+        grid-area: banner-#{$i};    
+        @if($i>1){
+            background: black;
+        }
+    }
+}
 
-.contenedor-2 .logo {
-    grid-area: logo;
-
-}
-.contenedor-2 .banner-1{
-    grid-area: banner-1;    
-}
-.contenedor-2 .banner-2{
-    grid-area: banner-2;    
-    background: black;
-}
-.contenedor-2 .banner-3{
-    grid-area: banner-3;    
-    background: black;
-}
 
 
 
@@ -120,20 +110,18 @@ body {
 	display: grid;
 	grid-gap: 5px; 
     justify-content: center;  
-    grid-template-areas:    "video-1 video-2 video-3"
+    grid-template-areas:    "video-1 video-2 video-3";
+    text-align:center;
 
 }
 
-.contenedor-3 .video-1 {
-    grid-area: video-1;
-    
+
+@for $i from 1 through 3 {
+    .contenedor-3 .video-#{$i} {
+        grid-area: video-#{$i};    
+    }
 }
-.contenedor-4 .video-2 {
-    grid-area: video-2;
-}
-.contenedor-4 .video-3 {
-    grid-area: video-3;
-}
+
 
 
 .contenedor-4 {
@@ -142,47 +130,44 @@ body {
 	grid-gap: 5px; 
     grid-template-areas:    "parrafo-A parrafo-A parrafo-A parrafo-D"
                             "parrafo-B parrafo-E parrafo-E parrafo-D"
-                            "parrafo-C parrafo-C parrafo-C parrafo-C"
+                            "parrafo-C parrafo-C parrafo-C parrafo-C";
+    > div,
+    .parrafo-A,
+    .parrafo-B,
+    .parrafo-C,
+    .parrafo-D,
+    .parrafo-E  {
+        border-radius: 4px;
+    }     
+
+    .parrafo-A {
+        grid-area: parrafo-A;
+        
+    }
+    .parrafo-B {
+        grid-area: parrafo-B;
+    }    
+    .parrafo-C {
+        grid-area: parrafo-C;
+    }    
+    .parrafo-D {
+        grid-area: parrafo-D;
+    }
+    .parrafo-E {
+        grid-area: parrafo-E;
+    }
+    .parrafo-A,
+    .parrafo-B,
+    .parrafo-C,
+    .parrafo-D,
+    .parrafo-E,
+    p{
+        animation-duration: 1s;
+        animation-name: slidein;    
+    }
+
 }
 
-
-.contenedor-4 > div,
-.contenedor-4 .parrafo-A,
-.contenedor-4 .parrafo-B,
-.contenedor-4 .parrafo-C,
-.contenedor-4 .parrafo-D,
-.contenedor-4 .parrafo-E  {
-	border-radius: 4px;
-}
-
-.contenedor-4 .parrafo-A {
-    grid-area: parrafo-A;
-    
-}
-.contenedor-4 .parrafo-B {
-    grid-area: parrafo-B;
-}
-.contenedor-4 .parrafo-C {
-    grid-area: parrafo-C;
-}
-.contenedor-4 .parrafo-D {
-    grid-area: parrafo-D;
-}
-
-.contenedor-4 .parrafo-E {
-    grid-area: parrafo-E;
-}
-
-
-.contenedor-4   .parrafo-A,
-                .parrafo-B,
-                .parrafo-C,
-                .parrafo-D,
-                .parrafo-E,
-                p{
-    animation-duration: 1s;
-    animation-name: slidein;    
-}
 
 @keyframes slidein {
     from {
