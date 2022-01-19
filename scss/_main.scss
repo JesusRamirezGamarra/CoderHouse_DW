@@ -71,14 +71,11 @@ fieldset {
         height: 40px;
         display: inline-block;
         vertical-align: middle;
-        @if($i==1){
-            width: 400px;
+        @if($i<3){
+            width: 300px;
             text-align:right;
             font-size:12px;
             align-items: right;
-        }
-        @if($i==2){
-            width: 300px;
         }
         @if($i==3){
             width: 100px;

@@ -317,7 +317,7 @@ fieldset div input[type=submit] {
   height: 40px;
   display: inline-block;
   vertical-align: middle;
-  width: 400px;
+  width: 300px;
   text-align: right;
   font-size: 12px;
   -webkit-box-align: right;
@@ -340,6 +340,11 @@ fieldset div input[type=submit] {
   display: inline-block;
   vertical-align: middle;
   width: 300px;
+  text-align: right;
+  font-size: 12px;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
 }
 
 #body-main-fieldset-div2 input {
@@ -460,7 +465,7 @@ body {
 .contenedor .sidebar,
 .contenedor .footer {
   background: #fff;
-  padding: 20px;
+  padding: 5px;
   border-radius: 4px;
 }
 .contenedor .header {
@@ -870,7 +875,7 @@ body {
     -ms-grid-column-span: 3;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 414px) {
   body {
     background-color: black;
     background-image: none !important;
@@ -916,6 +921,14 @@ body {
 
   .text-center-commingSoon img {
     width: 150px !important;
+  }
+
+  select {
+    width: 20em;
+  }
+
+  textarea {
+    width: 20em;
   }
 
   .contenedor .header {

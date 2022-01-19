@@ -30,7 +30,7 @@ body {
     .sidebar,
     .footer {
         background: #fff;
-        padding: 20px;
+        padding: 5px;
         border-radius: 4px;
     }
 
@@ -232,7 +232,8 @@ body {
     }
 }
 
-@media screen and (max-width:480px){
+
+@media screen and (max-width:414px){
     body{
         background-color: black;
         background-image: none !important;
@@ -277,4 +278,7 @@ body {
     .text-center-commingSoon img {
         width: 150px !important;
     }
+    
+    select { width: 20em }
+    textarea { width: 20em }
 }
