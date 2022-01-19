@@ -265,12 +265,16 @@ body {
     }
 
     .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
     }
 
     .featurette-heading {
-    font-size: 50px;
+        font-size: 50px;
+    }
+    
+    .text-center-commingSoon img {
+        width: 150px !important;
     }
 }

@@ -914,6 +914,10 @@ body {
     font-size: 50px;
   }
 
+  .text-center-commingSoon img {
+    width: 150px !important;
+  }
+
   .contenedor .header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
