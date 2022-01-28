@@ -34,6 +34,9 @@ ul {
         .contenedor .widget-#{$i} table {
             height: 90px;
         }
+        .contenedor .widget-#{$i} a{
+            text-decoration: none;
+        }
     }
 
 }

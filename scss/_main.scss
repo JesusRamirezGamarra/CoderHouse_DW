@@ -16,13 +16,17 @@ main section {
         margin:0px 0px 0px 0px;
         @if $i == 1 {
             padding: 20px 20px 0px 20px;
+            font-size: 1.5rem;
         }
         @if $i >1 {
             padding: 0px 20px 0px 20px;
         }
         @if $i == 2{
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
+        @if $i == 3{
+            font-size: 0.8rem;
+        }        
     }
     @if($i == 4){
         section article p {

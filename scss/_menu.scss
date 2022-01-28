@@ -20,8 +20,10 @@
         transition: all 2.5s ease;
         background: #af0d0d;
         cursor: pointer;
+        font-style: unset;
+        text-decoration: dashed white;
         font-weight: bold;
-        text-transform: uppercase;
+        text-transform: none;
       }
     }
 }
@@ -35,11 +37,10 @@
 
 
 %boton{
-    margin: 5px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 @mixin boton($fondo,$letra) {
