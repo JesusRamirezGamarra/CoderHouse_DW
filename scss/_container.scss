@@ -156,12 +156,11 @@ body {
         grid-area: parrafo-E;
     }
     .parrafo-A,
-    .parrafo-B,
     .parrafo-C,
     .parrafo-D,
     .parrafo-E,
     p{
-        animation-duration: 1s;
+        animation-duration: 0.3s;
         animation-name: slidein;    
     }
 

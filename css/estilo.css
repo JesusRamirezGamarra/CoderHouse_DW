@@ -663,13 +663,12 @@ body {
   grid-area: parrafo-E;
 }
 .contenedor-4 .parrafo-A,
-.contenedor-4 .parrafo-B,
 .contenedor-4 .parrafo-C,
 .contenedor-4 .parrafo-D,
 .contenedor-4 .parrafo-E,
 .contenedor-4 p {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   -webkit-animation-name: slidein;
           animation-name: slidein;
 }
